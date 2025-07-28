@@ -77,6 +77,6 @@ def ask_question():
     })
     
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 5000))  # Ensure PORT is properly set
+    port = int(os.getenv("PORT", 10000))  # ✅ Uses 10000 locally, and Render's PORT in production
     app.run(host="0.0.0.0", port=port, debug=False)
 
