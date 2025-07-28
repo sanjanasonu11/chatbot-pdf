@@ -77,6 +77,6 @@ def ask_question():
     })
     
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 10000))  # ✅ Uses 10000 locally, and Render's PORT in production
+    port = int(os.getenv("PORT", 10000))
+    print("✅ Flask app starting on port", port)  # Debug line
     app.run(host="0.0.0.0", port=port, debug=False)
-
